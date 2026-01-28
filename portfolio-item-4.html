@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Campaign - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-primary: #0f1419; --bg-secondary: #1a1f2e; --bg-tertiary: #252d3d;
+            --accent-warm: #d4a574; --accent-light: #e8c9a8; --text-primary: #f5f5f5;
+            --text-secondary: #b8b8b8; --border-color: #2d3547;
+        }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-primary); color: var(--text-primary); line-height: 1.6; }
+        header { position: fixed; top: 0; width: 100%; z-index: 1000; background: linear-gradient(180deg, rgba(15, 20, 25, 0.98) 0%, rgba(15, 20, 25, 0.95) 100%); border-bottom: 1px solid var(--border-color); padding: 1.2rem 0; }
+        .header-container { max-width: 1400px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; letter-spacing: 2px; color: var(--accent-warm); text-decoration: none; }
+        .back-link { color: var(--text-primary); text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+        .back-link:hover { color: var(--accent-warm); }
+        .content { margin-top: 100px; max-width: 1200px; margin-left: auto; margin-right: auto; padding: 4rem 2rem; }
+        .breadcrumb { margin-bottom: 3rem; display: flex; gap: 1rem; align-items: center; font-size: 0.95rem; color: var(--text-secondary); }
+        .breadcrumb a { color: var(--accent-warm); text-decoration: none; }
+        .project-header { margin-bottom: 3rem; }
+        .project-category { color: var(--accent-warm); font-size: 0.85rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; }
+        .project-title { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 1rem; color: var(--text-primary); }
+        .project-subtitle { font-size: 1.2rem; color: var(--text-secondary); font-weight: 300; }
+        .video-container { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px; margin: 3rem 0; background-color: var(--bg-secondary); border: 1px solid var(--border-color); }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 15px; }
+        .project-details { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 4rem 0; padding: 2rem 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); }
+        .detail-section h3 { font-size: 1.2rem; margin-bottom: 1.5rem; color: var(--accent-warm); font-weight: 600; }
+        .detail-item { margin-bottom: 1.5rem; }
+        .detail-label { font-size: 0.9rem; color: var(--text-secondary); font-weight: 600; margin-bottom: 0.5rem; }
+        .detail-value { font-size: 1rem; color: var(--text-primary); }
+        .tags { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .tag { background-color: var(--bg-secondary); color: var(--accent-warm); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; border: 1px solid var(--border-color); }
+        .description { margin: 3rem 0; }
+        .description h3 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 1.5rem; color: var(--text-primary); }
+        .description p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; font-weight: 300; }
+        .cta-section { padding: 3rem; background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%); border-radius: 12px; border: 1px solid var(--border-color); text-align: center; margin: 3rem 0; }
+        .cta-section h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1rem; color: var(--text-primary); }
+        .cta-button { display: inline-block; padding: 1rem 2.5rem; background-color: var(--accent-warm); color: var(--bg-primary); text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; }
+        .cta-button:hover { background-color: var(--accent-light); transform: translateY(-3px); }
+        footer { background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%); color: var(--text-primary); padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--border-color); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="portfolio.html" class="logo">CREATIVE</a>
+            <a href="portfolio.html" class="back-link">← Back to Portfolio</a>
+        </div>
+    </header>
+    <div class="content">
+        <div class="breadcrumb">
+            <a href="portfolio.html">Portfolio</a> <span>/</span> <span>Social Campaign</span>
+        </div>
+        <div class="project-header">
+            <div class="project-category">Social Media</div>
+            <h1 class="project-title">Social Campaign</h1>
+            <p class="project-subtitle">Vertical video content optimized for Instagram Reels and TikTok with trending effects</p>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="project-details">
+            <div class="detail-section">
+                <h3>Project Details</h3>
+                <div class="detail-item"><div class="detail-label">Client</div><div class="detail-value">Fashion Brand Co.</div></div>
+                <div class="detail-item"><div class="detail-label">Reach</div><div class="detail-value">2M+ Impressions</div></div>
+                <div class="detail-item"><div class="detail-label">Year</div><div class="detail-value">2024</div></div>
+                <div class="detail-item"><div class="detail-label">Format</div><div class="detail-value">9:16 | Vertical Video</div></div>
+            </div>
+            <div class="detail-section">
+                <h3>Skills Used</h3>
+                <div class="tags">
+                    <div class="tag">Social Video</div> <div class="tag">Transitions</div> <div class="tag">Trending Audio</div>
+                    <div class="tag">Color Grading</div> <div class="tag">Mobile Optimization</div>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <h3>Campaign Overview</h3>
+            <p>Created a viral-ready social media campaign featuring fast-paced vertical video content specifically optimized for TikTok and Instagram Reels. The content leveraged trending sounds and visual effects to maximize engagement and reach.</p>
+            <h3 style="margin-top: 2rem;">Strategy & Execution</h3>
+            <p>The campaign focused on visual storytelling with quick cuts, dynamic transitions, and trending effects that resonate with social media audiences. Each clip was strategically designed to hook viewers in the first second and maintain engagement throughout.</p>
+        </div>
+        <div class="cta-section">
+            <h3>Need Viral Social Content?</h3>
+            <p>Let's create engaging social videos that drive engagement and grow your audience.</p>
+            <a href="portfolio.html#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </div>
+    <footer>
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">© 2024 Creative Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
